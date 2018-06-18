@@ -87,7 +87,7 @@ key = 3
 
 Now you are ready to make your first program to encrypt a letter, adding the following lines to your code.
 
-The following line is used to request to the person that is using the program (called user) to enter a **character** (single letter)::
+The following line is used to request to the person that is using the program (called user) to enter a **character** (single letter):
 ```python 
 character = input('Please enter a character: ')
 ```
@@ -99,11 +99,11 @@ position = alphabet.find(character)
 print(position)
 ```
 
-In the following example, the user is entering the character _‘e’_ and the program is showing the position **4** as a result of the program's execution: :
+In the following example, the user is entering the character _‘e’_ and the program is showing the position **4** as a result of the program's execution:
 
 ![Encrypting-character](https://raw.githubusercontent.com/verofa/intro-to-python-mgc-v2/master/Encrypting-character.gif)
 
-Now that you know the position of the original character (letter) to encrypt it, you should add the **key** (remember its value is 3) to that position creating a new variable (**newPosition**) to store the position of the encrypted character.
+Now that you know the position of the original character (letter) to encrypt it, you should add the **key** (in this example its value is 3) to that position creating a new variable (**newPosition**) to store the position of the encrypted character.
 
 ```python
 newPosition = position + key
@@ -111,11 +111,11 @@ newPosition = position + key
 
 ![Encrypting-character-np](https://raw.githubusercontent.com/verofa/intro-to-python-mgc-v2/master/Encrypting-character-np.gif)
 
-In the example above, letter ‘e’ is at position 4. To encrypt it, you add the key (3), giving 7 as the new position that will be used to encrypt the character (that correspond to the letter 'h'). But what happens when you try to get the new position of the letter ‘z’?
+In the example above, letter _‘e’_ is at position **4**. To encrypt it, you add the **key** (3), giving 7 as the new position that will be used to encrypt the character (that correspond to the letter _‘h’_). But what happens when you try to get the new position of the letter _‘z’_?
 
 ![Encrypting-character-z](https://raw.githubusercontent.com/verofa/intro-to-python-mgc-v2/master/Encrypting-character-z.gif)
 
-Notice how the newPosition is **28**, and there are not **28** letters in the alphabet!, so sort it out you can use a **%** to tell the **new position** to go back to position 0 once it gets to position **26**.
+Notice how the _newPosition_ is **28** but there are not **28** letters in the alphabet!. To sort it out you can use a **% (modulus)** to tell the **new position** to go back to position 0 once it gets to position **26**.
 
 ```python
 alphabet='abcdefghijklmnopqrstuvwxyz'
@@ -128,7 +128,10 @@ newPosition = (position + key) % 26
 print(newPosition)
 ```
 
-Now you are almost there yuhu!! :). The last thing that remains to be done is to replace the original character with the new character that have to be associated with the value of the new position. You have to create and add to your code a new variable, for doing it, and to make it simple you will call it **newCharacter**
+Now you are almost there yuhu!! :). 
+
+The last thing that needs to be done is to replace the original character with the new character that has to be associated with the value of the new position.
+You have to create and add a new variable to your code. To do that and to make it simple you will call this new variable **newCharacter**.
 
 ```python
 newCharacter = alphabet[newPosition]
@@ -140,14 +143,17 @@ Let's see what your program is doing!
 
 ![Encrypting-character-e](https://raw.githubusercontent.com/verofa/intro-to-python-mgc-v2/master/Encrypting-character-e.gif)
 
-It is almost done, well done! :). The user (or your friend in this case) do not need to know the position of the characters so you can also remove some of your print statements, just printing the new character at the end. What lines number do you need to delete to do it?
+It is almost ready, well done! :). 
+
+The user (or your friend in this case) should not know the position of the characters. For this purpose you can now remove some of your print statements and just leave the print of the new character at the end of the code. What line numbers do you need to delete to achieve this?
 
 
 ### Step 4: Encrypting entire messages with Python
 
-Now that you know how encryption works, it is time to encrypt a entire message using Python, so let's do it!
+Now that you know how encryption works, it is time to encrypt a entire message using Python. So let's do it!
 
-You have to change a couple of lines of your code to store the entire message and not just one character. Also, add a **for loop** to your code, and **indent** (four spaces before the beginning of each line) the rest of the code so that it is repeated for each character in the message as shown bellow:
+You need to change a couple of lines of your code to store the entire message instead of only one character, as it does now. 
+Also, add a **for** loop to your code, and **indent** (four spaces before the beginning of each line) the rest of the code. This section of the code inside the loop will be repeated for each character in the message as shown below:
 
 ```python
 alphabet='abcdefghijklmnopqrstuvwxyz'
@@ -165,7 +171,7 @@ for character in message:
 
 What happens when you run your program?
 
-Time to finish your program to encrypt a message ;), for doing that you have to add each encrypted character to your **newMessage** variable adding these lines in your code:
+Time to finish your program to encrypt a message ;). To do that, add each encrypted character to your **newMessage** variable by adding the following lines to your code:
 
 ```python
 newMessage += newCharacter
@@ -177,9 +183,9 @@ Run your program, should look something like this:
 
 ![Encrypting-character-by-character](https://raw.githubusercontent.com/verofa/intro-to-python-mgc-v2/master/Encrypting-character-by-character.gif)
 
-You can notice that every time that is encrypting a character is also printing part of the message, if you just want to see the final message you have to delete the spaces before the last print statement, like this, the encrypted message will only be displayed once at the end. 
+You will notice that every time the program is encrypting a character it is also printing part of the message on the screen. If you just want to see the final message, just delete the spaces before the last print statement. This way the encrypted message will only be displayed once at the end of the execution.
 
-You can also delete (or comment using the **#** at the beggining of the line) the code for printing the character positions and add to the last print statement a phrase to know it correspond to the new message, like this:
+You can also delete the code for printing the character positions (or comment it by using the symbol **#** at the beggining of the line) and add to the last print statement a sentence that indicates that it corresponds to the new message. Like this:
 
 ```python
 alphabet='abcdefghijklmnopqrstuvwxyz'
@@ -197,12 +203,12 @@ for character in message:
 print('The new encrypted message is: ', newMessage)
 ```
 
-Congratulations! now you can encrypt messages to chat with your friends using secret messages using your own program in Python!
+Congratulations! Now you can encrypt messages to chat with your friends secretly using your own program in Python!
 
 ![Encrypting-message](https://raw.githubusercontent.com/verofa/intro-to-python-mgc-v2/master/Encrypting-message.gif)
 
 
 ## Challenge: Encrypting and decrypting messages
 
-This is just the beginning, now that you know how to encrypt some messages, make  your own program to decrypt it.
+This is just the beginning! Now that you know how to encrypt some messages, make your own program to decrypt it.
 Good luck and never stop learning, because learning is the ability to understand how everything around you works (and also how to encrypt and decrypt messages :) )
