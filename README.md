@@ -32,10 +32,10 @@ A cipher is a type of secret code, where each letter in the original message (ca
 
 ### Step 2 - Encrypting letters.
 
-Let’s start by encrypting the letter **'E'** using a left shift of 3 as the key (but you can use any number you like), so that (for example) each occurrence of **E** in the plaintext becomes **B**.
+Let’s start by encrypting the letter **'A'** using a right shift of 3 as the key (but you can use any number you like), so that (for example) each occurrence of **A** in the plaintext becomes **D**.
 
 
-![Caesar Cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Caesar_cipher_left_shift_of_3.svg/640px-Caesar_cipher_left_shift_of_3.svg.png)
+![Caesar Cipher](https://codeclubprojects.org/en-GB/python/secret-messages/images/messages-wheel-eg.png)
 
 ### Step 3 - Encrypting letters using Python.
 
