@@ -3,16 +3,16 @@
 
 In this project, you will learn how to make your own encryption program using Python (that is an interpreted high-level programming language for general-purpose programming) to send and receive secret messages with a friend. 
 
-In this project you will also learn programming concepts as:
+In this project you will also learn programming concepts like:
 
 - Iteration (looping) over a string variable;
-- The find() method;
-- The modulus operator (%).
+- The **find()** method;
+- The modulus operator **(%)** division reminder.
 - **for** loops;
 
 ## Prerequisites
 
-Before get on with it to successfully complete this tutorial in a Microsoft Windows Operating System, you must do the following:
+Before getting on to successfully complete this tutorial in a Microsoft Windows Operating System, you must do the following:
 
 1.- Download and install the [Visual Studio Code](https://go.microsoft.com/fwlink/?LinkID=534107) for Windows.
 
@@ -20,13 +20,18 @@ Before get on with it to successfully complete this tutorial in a Microsoft Wind
 
 3.- Install the extension from the [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
-4.- Make sure the location of your Python interpreter is included in your **PATH** environment variable. You can check this by running **path** at the command prompt. If the Python interpreter's folder is not included, open Windows Settings, search for "environment", select Edit environment variables for your account, then edit the Path variable to include that folder (C:\Program Files (x86)\Python36-32).
+4.- Make sure the location of your Python interpreter is included in your **PATH** environment variable. 
+You can check this by running **path** at the command prompt. If the Python interpreter's folder is not included:
+
+4.1.- Open Windows Settings, search for "environment"
+4.2.- Select Edit environment variables for your account
+4.3.- then edit the Path variable to include that folder _(C:\Program Files (x86)\Python36-32)_.
 	
 ## Time to start coding!
 
 ### Step 1 - Understanding the Caesar cipher method or algorithm for performing encryption or decryption of a message.
 
-The Caesar cipher is one of the oldest and simplest forms of encrypting a message, and its name come from Julius Caesar that was popular leader of the Roman Republic. 
+The Caesar cipher is one of the oldest and simplest forms of encrypting a message and its name come from Julius Caesar, who was a emperor of the Roman Republic Empire. 
 
 A cipher is a type of secret code, where each letter in the original message (called the plaintext) is replaced with a letter corresponding to a certain number of letters shifted up or down (key) in the alphabet.
 
@@ -43,7 +48,7 @@ Create a file in Visual Studio Code, name it 'main.py' and write it out as an al
 
 ![alphabet-variable](https://raw.githubusercontent.com/verofa/intro-to-python-mgc-v2/master/alphabet.PNG)
 
-Keep in mind that each letter of the alphabet has a position, starting at position 0. So the letter ‘a’ is at position 0 of the alphabet, ‘b’ is at position 1, ‘c’ is at position 2 and so on.
+Keep in mind that each letter of the alphabet has a specific position within the alphabet, starting at position 0. So the letter _‘a’_ is at position **0** of the alphabet, _‘b’_ is at position **1**, _‘c’_ is at position **2** and so on.
 
 ![alphabet-number-position](https://codeclubprojects.org/en-GB/python/secret-messages/images/messages-array.png)
 
@@ -57,7 +62,9 @@ It should look more or less like this:
 
 ![Printing-letter-c](https://raw.githubusercontent.com/verofa/intro-to-python-mgc-v2/master/Printing-letter-c.PNG)
 
-Now it is time to know what those two lines are doing. It is simple to run 'main.py' with Python. Right-click in the editor and select **Run Python File in Terminal** (which saves the file automatically ;) ):
+Now it is time to know what those two lines are doing. 
+
+It is simple to run 'main.py' with Python: _right-click_ in the editor and select **Run Python File in Terminal** (which saves the file automatically ;) ):
 
 ![Executing-Code-VSC](https://raw.githubusercontent.com/verofa/intro-to-python-mgc-v2/master/Executing-Code-VSC.gif)
 
@@ -71,7 +78,7 @@ print(alphabet[14])
 
 What is it the output? (You can delete the print statements once you have tried this out)
 
-At this point you have learned how to work with an array (the values that store the variable **alphabet**) and extract the value that you want to use from it. Therefore, the next step to encrypt your message is to choose and configure the key you will need to encrypt your messages. For doing that, you will need to store the secret key in a variable as well:
+At this point you have learned how to work with an [array](https://techterms.com/definition/array) (the values that store the variable **alphabet**) and extract the value that you want to use from it. Therefore, the next step to encrypt your message is to choose and configure the key you will need to encrypt your messages. For doing that, you will need to store the secret key in a variable as well:
 
 ```python
 alphabet='abcdefghijklmnopqrstuvwxyz'
@@ -80,19 +87,19 @@ key = 3
 
 Now you are ready to make your first program to encrypt a letter, adding the following lines to your code.
 
-This line, is to ask to the person that is using the program (called **user**) to enter a character (single letter):
+The following line is used to request to the person that is using the program (called user) to enter a **character** (single letter)::
 ```python 
 character = input('Please enter a character: ')
 ```
 
-Then you have to calculate the position of that character, using the method **find** and then you are going to print it in the screen to know its value as shown bellow:
+Then you have to calculate the position of that character using the method **find** and then you can print it in the screen to know its value, just as shown below:
 
 ```python
 position = alphabet.find(character)
 print(position)
 ```
 
-In the following example, the user is entering the character 'e' and the program is showing the position 4 as a result of the execution of it :
+In the following example, the user is entering the character _‘e’_ and the program is showing the position **4** as a result of the program's execution: :
 
 ![Encrypting-character](https://raw.githubusercontent.com/verofa/intro-to-python-mgc-v2/master/Encrypting-character.gif)
 
