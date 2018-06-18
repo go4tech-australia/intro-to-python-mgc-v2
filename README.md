@@ -24,7 +24,9 @@ Before getting on to successfully complete this tutorial in a Microsoft Windows 
 You can check this by running **path** at the command prompt. If the Python interpreter's folder is not included:
 
 4.1.- Open Windows Settings, search for "environment"
+
 4.2.- Select Edit environment variables for your account
+
 4.3.- then edit the Path variable to include that folder _(C:\Program Files (x86)\Python36-32)_.
 	
 ## Time to start coding!
