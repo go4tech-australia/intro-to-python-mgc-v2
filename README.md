@@ -35,7 +35,7 @@ A cipher is a type of secret code, where each letter in the original message (ca
 Let’s start by encrypting the letter **'A'** using a right shift of 3 as the key (but you can use any number you like), so that (for example) each occurrence of **A** in the plaintext becomes **D**.
 
 
-![Caesar Cipher](https://codeclubprojects.org/en-GB/python/secret-messages/images/messages-wheel-eg.png)
+![Caesar Cipher](https://raw.githubusercontent.com/go4tech-australia/intro-to-python-mgc-v2/master/alphabet-CaesarCipher.PNG)
 
 ### Step 3 - Encrypting letters using Python.
 
