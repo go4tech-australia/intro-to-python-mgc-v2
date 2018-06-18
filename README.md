@@ -21,7 +21,7 @@ Before getting on to successfully complete this tutorial in a Microsoft Windows 
 3.- Install the extension from the [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
 4.- Make sure the location of your Python interpreter is included in your **PATH** environment variable. 
-You can check this by running **path** at the command prompt. If the Python interpreter's folder is not included:
+You can check this by running **path** at the command prompt (you should see this folder included in the path _C:\Program Files (x86)\Python36-32_). If the Python interpreter's folder is not included:
 
 4.1.- Open Windows Settings, search for "environment"
 
