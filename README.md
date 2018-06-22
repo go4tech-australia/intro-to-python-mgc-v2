@@ -1,7 +1,7 @@
 # Introduction to Python Version 2
 ## Creating an application to send and receive secret messages
 
-In this project, you will learn how to make your own encryption program using Python (that is an interpreted high-level programming language for general-purpose programming) to send and receive secret messages with a friend. 
+In this project, you will learn how to make your own encryption program using Python (that is an interpreted programming language for general-purpose programming) to send and receive secret messages with a friend. 
 
 In this project you will also learn programming concepts like:
 
@@ -215,3 +215,8 @@ Congratulations! Now you can encrypt messages to chat with your friends secretly
 This is just the beginning! Now that you know how to encrypt some messages, make your own program to decrypt it.
 
 Good luck and never stop learning, because learning is the ability to understand how everything around you works (and also how to encrypt and decrypt messages :) )
+
+## More Python resources
+- Here you are a link to know more about [Ciphers with Python](https://inventwithpython.com/hacking/)
+- If you like [music](https://mdoege.github.io/PySynth/) and [art](https://vimeo.com/133259163)
+- Also, if you want to check out the first version of the course **Introduction to Python"** in this [link](https://github.com/go4tech-au/intro-to-python-mgc) you can do it. Enjoy it :)
