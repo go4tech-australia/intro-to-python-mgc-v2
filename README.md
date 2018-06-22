@@ -218,5 +218,5 @@ Good luck and never stop learning, because learning is the ability to understand
 
 ## More Python resources
 - Here you are a link to know more about [Ciphers with Python](https://inventwithpython.com/hacking/)
-- If you like [music](https://mdoege.github.io/PySynth/) and [art](https://vimeo.com/133259163)
+- Or if you like [music](https://mdoege.github.io/PySynth/) and [art](https://vimeo.com/133259163)
 - Also, if you want to check out the first version of the course **Introduction to Python"** in this [link](https://github.com/go4tech-au/intro-to-python-mgc) you can do it. Enjoy it :)
